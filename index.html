@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,6 +48,31 @@
             padding: 10px;
             color: gold;
         }
+
+        /* ✅ Responsive Design for Mobile */
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Stacks elements vertically */
+            }
+            .sidebar, .right-sidebar {
+                width: 100%; /* Full width for better spacing */
+                text-align: center; /* Aligns text for a clean look */
+            }
+            .main-content {
+                padding: 10px;
+            }
+            iframe {
+                width: 100%; /* Ensures maps & forms are mobile-friendly */
+                height: 250px; /* Optimized for smaller screens */
+            }
+            h1, h2, h3 {
+                font-size: 1.4em; /* Adjusted for better readability */
+            }
+            a {
+                font-size: 1.1em;
+                padding: 8px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -86,7 +111,7 @@
                 <a href="#">Balance Transfer Savings Calculator</a>
                 <a href="#">Prepayment & Foreclosure Calculator</a>
                 <h2>Apply for Loans</h2>
-                <a href="personal-loan.html">Apply for Personal Loan</a>
+                <a href="#">Apply for Personal Loan</a>
                 <a href="#">Apply for Home Loan</a>
                 <a href="#">Apply for Business Loan</a>
                 <a href="#">Apply for Car Loan</a>
